@@ -21,14 +21,14 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "5634679884:AAH6KjE4JbS5rD3ljyZSJZJx6I-rbz5
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/ebad2eb29a3d2702e1531.jpg https://telegra.ph/file/5250452a1ab5364cfc4dc.jpg https://telegra.ph/file/68a707b00e8e88ed3c4a4.jpg https://telegra.ph/file/f44b3f7381cbf2e7708bb.jpg https://telegra.ph/file/4aaa6122c1fe3b71cf52c.jpg https://telegra.ph/file/486a9c2e80ed1729a345f.jpg https://telegra.ph/file/b165f958d038b903d43e1.jpg https://telegra.ph/file/989a744a60c061838444f.jpg https://telegra.ph/file/ff8f67820985179067982.jpg https://telegra.ph/file/3d8c714a3b0c04bfdec7e.jpg https://telegra.ph/file/fd0e1a19b0268c005edf8.jpg https://telegra.ph/file/8cfe0b5ceaa7b969448c4.jpg https://telegra.ph/file/5965fb86394de52b45e31.jpg https://telegra.ph/file/b826e4fabf1bf0fa72db3.jpg https://telegra.ph/file/baba127a57d74bc19e956.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/howtodownloadmoviestamilhd/70")
+PICS = (environ.get('PICS', 'https://telegra.ph/file/ad5d6fbbaf1ed157d8a8d.jpg https://telegra.ph/file/cd9fc8e0e78aca671413c.jpg https://telegra.ph/file/428a4db9a6bfa4dc4e02b.jpg https://telegra.ph/file/5ed2febe061267d136a5b.jpg https://telegra.ph/file/7dc26a7f23890ed0afbb4.jpg https://telegra.ph/file/19cfa80258e812884b440.jpg https://telegra.ph/file/b1a6100f4ddbd9f7ce572.jpg https://telegra.ph/file/bc8863fc6305b3779040a.jpg https://telegra.ph/file/c59b22dbfde9a58324ba2.jpg https://telegra.ph/file/95e51ac142e029b4dca23.jpg https://telegra.ph/file/3c90e4becb4cb8052829f.jpg https://telegra.ph/file/3ce8a507abb6f51462180.jpg https://telegra.ph/file/f025cddfa30155ffc7537.jpg https://telegra.ph/file/45088df79a87513fdd6d7.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", " ")
+MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/b966ba3da48385e450655.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5854751717').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1001747802132').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1251111009').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', ' -1001973361665').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]

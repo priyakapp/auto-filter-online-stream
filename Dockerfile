@@ -10,4 +10,4 @@ RUN mkdir /EvaMaria
 WORKDIR /EvaMaria
 COPY bot.py /bot.py
 EXPOSE 8080
-CMD ["python", "/bot.py"]
+CMD ["python3", "/bot.py"]

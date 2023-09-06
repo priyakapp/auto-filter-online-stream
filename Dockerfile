@@ -10,4 +10,4 @@ RUN mkdir /EvaMaria
 WORKDIR /EvaMaria
 COPY start.sh /start.sh
 EXPOSE 8080
-CMD ["/bin/bash", "/start.sh"]
+CMD ["python3", "/bot.py"]

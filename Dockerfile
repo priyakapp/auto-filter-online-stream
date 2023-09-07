@@ -6,8 +6,8 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /EvaMaria
-WORKDIR /EvaMaria
+RUN mkdir /THALAPATHY-FILTER-BOT
+WORKDIR /THALAPATHY-FILTER-BOT
 COPY start.sh /start sh
 EXPOSE 8080
 CMD ["bin/bash", "/start.sh"]
